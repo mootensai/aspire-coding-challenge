@@ -1,0 +1,1502 @@
+{
+	"info": {
+		"_postman_id": "9e3a895e-cbd7-4e59-bd55-1776c2501908",
+		"name": "Aspire-Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "631180"
+	},
+	"item": [
+		{
+			"name": "Weekly Loans",
+			"item": [
+				{
+					"name": "Get Weekly Loan List",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{urlWeeklyLoan}}",
+							"host": [
+								"{{urlWeeklyLoan}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Weekly Loan List",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{urlWeeklyLoan}}",
+									"host": [
+										"{{urlWeeklyLoan}}"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 01 Mar 2023 18:16:54 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 01 Mar 2023 18:16:54 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.33"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"OK\",\n    \"data\": {\n        \"current_page\": 1,\n        \"data\": [\n            {\n                \"id\": 1,\n                \"amount\": \"10000.00\",\n                \"loan_term\": 3,\n                \"status\": 0,\n                \"created_by\": 1,\n                \"updated_by\": 1,\n                \"created_at\": \"2023-03-01T18:11:58.000000Z\",\n                \"updated_at\": \"2023-03-01T18:11:58.000000Z\"\n            }\n        ],\n        \"first_page_url\": \"http://localhost:8000/api/weekly-loans?page=1\",\n        \"from\": 1,\n        \"last_page\": 1,\n        \"last_page_url\": \"http://localhost:8000/api/weekly-loans?page=1\",\n        \"links\": [\n            {\n                \"url\": null,\n                \"label\": \"&laquo; Previous\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://localhost:8000/api/weekly-loans?page=1\",\n                \"label\": \"1\",\n                \"active\": true\n            },\n            {\n                \"url\": null,\n                \"label\": \"Next &raquo;\",\n                \"active\": false\n            }\n        ],\n        \"next_page_url\": null,\n        \"path\": \"http://localhost:8000/api/weekly-loans\",\n        \"per_page\": 5,\n        \"prev_page_url\": null,\n        \"to\": 1,\n        \"total\": 1\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Request New Weekly Loan",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "amount",
+									"value": "10000",
+									"type": "text"
+								},
+								{
+									"key": "loan_term",
+									"value": "3",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{urlWeeklyLoan}}",
+							"host": [
+								"{{urlWeeklyLoan}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Request New Weekly Loan",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "amount",
+											"value": "10000.00",
+											"type": "text"
+										},
+										{
+											"key": "loan_term",
+											"value": "3",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{urlWeeklyLoan}}",
+									"host": [
+										"{{urlWeeklyLoan}}"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 01 Mar 2023 20:53:43 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 01 Mar 2023 20:53:43 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.33"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"OK\",\n    \"data\": {\n        \"amount\": \"10000.00\",\n        \"loan_term\": \"3\",\n        \"created_by\": 1,\n        \"updated_by\": 1,\n        \"updated_at\": \"2023-03-01T20:53:43.000000Z\",\n        \"created_at\": \"2023-03-01T20:53:43.000000Z\",\n        \"id\": 1,\n        \"status\": \"PENDING\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Weekly Loan Detail",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{urlWeeklyLoan}}/wl_mvWyYj",
+							"host": [
+								"{{urlWeeklyLoan}}"
+							],
+							"path": [
+								"wl_mvWyYj"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Show",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{urlWeeklyLoan}}/wl_kGlRQ8",
+									"host": [
+										"{{urlWeeklyLoan}}"
+									],
+									"path": [
+										"wl_kGlRQ8"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Mar 2023 14:17:32 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Mar 2023 14:17:32 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.33"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"OK\",\n    \"data\": {\n        \"id\": 1,\n        \"amount\": \"10000.00\",\n        \"loan_term\": 3,\n        \"status\": \"APPROVED\",\n        \"created_by\": 2,\n        \"updated_by\": 1,\n        \"created_at\": \"2023-03-02T10:56:45.000000Z\",\n        \"updated_at\": \"2023-03-02T12:05:59.000000Z\",\n        \"hashid\": \"wl_kGlRQ8\",\n        \"hashidWithoutPrefix\": \"kGlRQ8\",\n        \"RepaymentSchedules\": {\n            \"withTimestamps\": false\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Approve",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{urlWeeklyLoan}}/approve/wl_mvWyYj",
+							"host": [
+								"{{urlWeeklyLoan}}"
+							],
+							"path": [
+								"approve",
+								"wl_mvWyYj"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Approve",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{urlWeeklyLoan}}/approve/wl_aXRzXk",
+									"host": [
+										"{{urlWeeklyLoan}}"
+									],
+									"path": [
+										"approve",
+										"wl_aXRzXk"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Mar 2023 14:03:20 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Mar 2023 14:03:20 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.33"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"OK\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Reject",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{urlWeeklyLoan}}/reject/wl_L96z9k",
+							"host": [
+								"{{urlWeeklyLoan}}"
+							],
+							"path": [
+								"reject",
+								"wl_L96z9k"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Reject",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{urlWeeklyLoan}}/reject/wl_kGlRQ8",
+									"host": [
+										"{{urlWeeklyLoan}}"
+									],
+									"path": [
+										"reject",
+										"wl_kGlRQ8"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Mar 2023 12:07:07 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Mar 2023 12:07:07 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.33"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": false,\n    \"message\": \"Loan status not PENDING (APPROVED).\"\n}"
+						},
+						{
+							"name": "Reject",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{urlWeeklyLoan}}/reject/wl_L96z9k",
+									"host": [
+										"{{urlWeeklyLoan}}"
+									],
+									"path": [
+										"reject",
+										"wl_L96z9k"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 04 Mar 2023 13:50:31 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 04 Mar 2023 13:50:31 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.33"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"OK\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Payment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "amount",
+									"value": "1000",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{urlPayment}}/wl_mvWyYj",
+							"host": [
+								"{{urlPayment}}"
+							],
+							"path": [
+								"wl_mvWyYj"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Payment",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "amount",
+											"value": "100",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{urlPayment}}/wl_7YNOD1",
+									"host": [
+										"{{urlPayment}}"
+									],
+									"path": [
+										"wl_7YNOD1"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 06 Mar 2023 13:02:12 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 06 Mar 2023 13:02:12 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.33"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"OK\",\n    \"data\": {\n        \"amount\": \"100\",\n        \"updated_at\": \"2023-03-06T13:02:12.000000Z\",\n        \"created_at\": \"2023-03-06T13:02:12.000000Z\",\n        \"hashid\": \"py_7YNOD1\"\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Register New User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "User 1",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "User1@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "User1Password!",
+							"type": "text"
+						},
+						{
+							"key": "password_confirmation",
+							"value": "User1Password!",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{urlRegister}}",
+					"host": [
+						"{{urlRegister}}"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Register",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "User 1",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "User1@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Yohanesc1!",
+									"type": "text"
+								},
+								{
+									"key": "password_confirmation",
+									"value": "Yohanesc1!",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{urlRegister}}",
+							"host": [
+								"{{urlRegister}}"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 01 Mar 2023 17:43:23 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 01 Mar 2023 17:43:23 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.33"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "56"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"user\": {\n        \"name\": \"User 1\",\n        \"email\": \"User1@gmail.com\",\n        \"updated_at\": \"2023-03-01T17:43:23.000000Z\",\n        \"created_at\": \"2023-03-01T17:43:23.000000Z\",\n        \"id\": 1\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Login User1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var response = JSON.parse(pm.response.text());",
+							"pm.expect(response.token).not.eq(undefined);",
+							"pm.collectionVariables.set(\"token\", response.token);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "user1@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "User1Password!",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{urlLogin}}",
+					"host": [
+						"{{urlLogin}}"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "user1@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Yohanesc1!",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{urlLogin}}",
+							"host": [
+								"{{urlLogin}}"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 01 Mar 2023 17:43:53 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 01 Mar 2023 17:43:53 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.33"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"user\": {\n        \"id\": 1,\n        \"name\": \"User 1\",\n        \"email\": \"User1@gmail.com\",\n        \"email_verified_at\": null,\n        \"created_at\": \"2023-03-01T17:43:23.000000Z\",\n        \"updated_at\": \"2023-03-01T17:43:23.000000Z\",\n        \"is_admin\": 0\n    },\n    \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjc3NjkyNjMzLCJleHAiOjE2Nzc2OTYyMzMsIm5iZiI6MTY3NzY5MjYzMywianRpIjoiQVFOMDZjUlNEaGZFdFhEMCIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.cji64VzjJsZ8giZGhgLQD6nenhgHKnVmZItKlqMb9hE\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Login User2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var response = JSON.parse(pm.response.text());",
+							"pm.expect(response.token).not.eq(undefined);",
+							"pm.collectionVariables.set(\"token\", response.token);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "user2@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "User2Password!",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{urlLogin}}",
+					"host": [
+						"{{urlLogin}}"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "user1@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Yohanesc1!",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{urlLogin}}",
+							"host": [
+								"{{urlLogin}}"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 01 Mar 2023 17:43:53 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 01 Mar 2023 17:43:53 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.33"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"user\": {\n        \"id\": 1,\n        \"name\": \"User 1\",\n        \"email\": \"User1@gmail.com\",\n        \"email_verified_at\": null,\n        \"created_at\": \"2023-03-01T17:43:23.000000Z\",\n        \"updated_at\": \"2023-03-01T17:43:23.000000Z\",\n        \"is_admin\": 0\n    },\n    \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjc3NjkyNjMzLCJleHAiOjE2Nzc2OTYyMzMsIm5iZiI6MTY3NzY5MjYzMywianRpIjoiQVFOMDZjUlNEaGZFdFhEMCIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.cji64VzjJsZ8giZGhgLQD6nenhgHKnVmZItKlqMb9hE\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Login Admin",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var response = JSON.parse(pm.response.text());",
+							"pm.expect(response.token).not.eq(undefined);",
+							"pm.collectionVariables.set(\"token\", response.token);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "admin@aspireapp.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Aspireadmin123!",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{urlLogin}}",
+					"host": [
+						"{{urlLogin}}"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Login Admin",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "admin@aspireapp.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Aspireadmin123!",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{urlLogin}}",
+							"host": [
+								"{{urlLogin}}"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 01 Mar 2023 20:43:45 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 01 Mar 2023 20:43:45 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.33"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"user\": {\n        \"id\": 1,\n        \"name\": \"Administrator\",\n        \"email\": \"admin@aspireapp.com\",\n        \"email_verified_at\": null,\n        \"is_admin\": 1,\n        \"created_by\": 1,\n        \"updated_by\": 1,\n        \"created_at\": \"2023-03-01T00:00:00.000000Z\",\n        \"updated_at\": \"2023-03-01T00:00:00.000000Z\"\n    },\n    \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjc3NzAzNDI1LCJleHAiOjE2Nzc3MDcwMjUsIm5iZiI6MTY3NzcwMzQyNSwianRpIjoiWFUxbFpXQTBUZDh1ZlYyMSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.7uq5cQ7nSQ0f_1CGT-YFAhrVypGgRZF4SbVSzbU-MHw\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Get User",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{urlUser}}",
+					"host": [
+						"{{urlUser}}"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get User",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{urlUser}}",
+							"host": [
+								"{{urlUser}}"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 01 Mar 2023 17:44:10 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 01 Mar 2023 17:44:10 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.33"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"name\": \"User 1\",\n    \"email\": \"User1@gmail.com\",\n    \"email_verified_at\": null,\n    \"created_at\": \"2023-03-01T17:43:23.000000Z\",\n    \"updated_at\": \"2023-03-01T17:43:23.000000Z\",\n    \"is_admin\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "Logout",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{urlLogout}}",
+					"host": [
+						"{{urlLogout}}"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Logout",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{urlLogout}}",
+							"host": [
+								"{{urlLogout}}"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 01 Mar 2023 08:03:08 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 01 Mar 2023 08:03:08 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.33"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Logout success.\"\n}"
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "token",
+			"value": ""
+		},
+		{
+			"key": "urlRegister",
+			"value": "http://localhost/api/register",
+			"type": "string"
+		},
+		{
+			"key": "urlLogin",
+			"value": "http://localhost/api/login",
+			"type": "string"
+		},
+		{
+			"key": "urlUser",
+			"value": "http://localhost/api/user",
+			"type": "string"
+		},
+		{
+			"key": "urlLogout",
+			"value": "http://localhost/api/logout",
+			"type": "string"
+		},
+		{
+			"key": "urlWeeklyLoan",
+			"value": "http://localhost/api/weekly-loans",
+			"type": "string"
+		},
+		{
+			"key": "url",
+			"value": "http://localhost/api",
+			"type": "string"
+		},
+		{
+			"key": "urlPayment",
+			"value": "http://localhost/api/weekly-loans/pay",
+			"type": "string"
+		}
+	]
+}

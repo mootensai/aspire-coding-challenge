@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /Users/yohanescandrajaya/Documents/GitHub/aspire-test/app</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="_css/bootstrap.min.css?v=9.2.25" rel="stylesheet" type="text/css">
+  <link href="_css/nv.d3.min.css?v=9.2.25" rel="stylesheet" type="text/css">
+  <link href="_css/style.css?v=9.2.25" rel="stylesheet" type="text/css">
+  <link href="_css/custom.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+  <header>
+   <div class="container-fluid">
+    <div class="row">
+     <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+       <ol class="breadcrumb">
+         <li class="breadcrumb-item"><a href="index.html">/Users/yohanescandrajaya/Documents/GitHub/aspire-test/app</a></li>
+         <li class="breadcrumb-item active">(Dashboard)</li>
+
+       </ol>
+      </nav>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Http/Middleware/TrustHosts.php.html#7">App\Http\Middleware\TrustHosts</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Middleware/RedirectIfAuthenticated.php.html#10">App\Http\Middleware\RedirectIfAuthenticated</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Providers/BroadcastServiceProvider.php.html#8">App\Providers\BroadcastServiceProvider</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Console/Kernel.php.html#8">App\Console\Kernel</a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="Http/Middleware/Authenticate.php.html#7">App\Http\Middleware\Authenticate</a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="Exceptions/Handler.php.html#9">App\Exceptions\Handler</a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="Models/RepaymentSchedule.php.html#8">App\Models\RepaymentSchedule</a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="Models/User.php.html#12">App\Models\User</a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="Models/WeeklyLoan.php.html#10">App\Models\WeeklyLoan</a></td><td class="text-right">85%</td></tr>
+       <tr><td><a href="Http/Controllers/Api/WeeklyLoanController.php.html#20">App\Http\Controllers\Api\WeeklyLoanController</a></td><td class="text-right">86%</td></tr>
+       <tr><td><a href="Http/Controllers/Api/RegisterController.php.html#11">App\Http\Controllers\Api\RegisterController</a></td><td class="text-right">89%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Http/Middleware/RedirectIfAuthenticated.php.html#10">App\Http\Middleware\RedirectIfAuthenticated</a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Http/Controllers/Api/WeeklyLoanController.php.html#20">App\Http\Controllers\Api\WeeklyLoanController</a></td><td class="text-right">19</td></tr>
+       <tr><td><a href="Models/WeeklyLoan.php.html#10">App\Models\WeeklyLoan</a></td><td class="text-right">9</td></tr>
+       <tr><td><a href="Http/Controllers/Api/RegisterController.php.html#11">App\Http\Controllers\Api\RegisterController</a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Http/Middleware/Authenticate.php.html#7">App\Http\Middleware\Authenticate</a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Console/Kernel.php.html#16"><abbr title="App\Console\Kernel::schedule">schedule</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Middleware/RedirectIfAuthenticated.php.html#20"><abbr title="App\Http\Middleware\RedirectIfAuthenticated::handle">handle</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Middleware/TrustHosts.php.html#14"><abbr title="App\Http\Middleware\TrustHosts::hosts">hosts</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/RepaymentSchedule.php.html#39"><abbr title="App\Models\RepaymentSchedule::getStatusText">getStatusText</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/User.php.html#66"><abbr title="App\Models\User::weeklyLoans">weeklyLoans</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/WeeklyLoan.php.html#50"><abbr title="App\Models\WeeklyLoan::payment">payment</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Providers/BroadcastServiceProvider.php.html#15"><abbr title="App\Providers\BroadcastServiceProvider::boot">boot</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Middleware/Authenticate.php.html#15"><abbr title="App\Http\Middleware\Authenticate::redirectTo">redirectTo</abbr></a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="Exceptions/Handler.php.html#36"><abbr title="App\Exceptions\Handler::register">register</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="Jobs/ProcessPayment.php.html#44"><abbr title="App\Jobs\ProcessPayment::handle">handle</abbr></a></td><td class="text-right">72%</td></tr>
+       <tr><td><a href="Http/Controllers/Api/WeeklyLoanController.php.html#97"><abbr title="App\Http\Controllers\Api\WeeklyLoanController::approve">approve</abbr></a></td><td class="text-right">73%</td></tr>
+       <tr><td><a href="Http/Controllers/Api/WeeklyLoanController.php.html#129"><abbr title="App\Http\Controllers\Api\WeeklyLoanController::reject">reject</abbr></a></td><td class="text-right">73%</td></tr>
+       <tr><td><a href="Http/Controllers/Api/WeeklyLoanController.php.html#27"><abbr title="App\Http\Controllers\Api\WeeklyLoanController::index">index</abbr></a></td><td class="text-right">83%</td></tr>
+       <tr><td><a href="Models/WeeklyLoan.php.html#75"><abbr title="App\Models\WeeklyLoan::changeStatus">changeStatus</abbr></a></td><td class="text-right">87%</td></tr>
+       <tr><td><a href="Http/Controllers/Api/RegisterController.php.html#19"><abbr title="App\Http\Controllers\Api\RegisterController::__invoke">__invoke</abbr></a></td><td class="text-right">89%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Http/Middleware/RedirectIfAuthenticated.php.html#20"><abbr title="App\Http\Middleware\RedirectIfAuthenticated::handle">handle</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Jobs/ProcessPayment.php.html#44"><abbr title="App\Jobs\ProcessPayment::handle">handle</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Http/Controllers/Api/WeeklyLoanController.php.html#97"><abbr title="App\Http\Controllers\Api\WeeklyLoanController::approve">approve</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Http/Controllers/Api/WeeklyLoanController.php.html#129"><abbr title="App\Http\Controllers\Api\WeeklyLoanController::reject">reject</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Models/WeeklyLoan.php.html#75"><abbr title="App\Models\WeeklyLoan::changeStatus">changeStatus</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Http/Controllers/Api/RegisterController.php.html#19"><abbr title="App\Http\Controllers\Api\RegisterController::__invoke">__invoke</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Http/Middleware/Authenticate.php.html#15"><abbr title="App\Http\Middleware\Authenticate::redirectTo">redirectTo</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="Http/Controllers/Api/WeeklyLoanController.php.html#27"><abbr title="App\Http\Controllers\Api\WeeklyLoanController::index">index</abbr></a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 9.2.25</a> using <a href="https://secure.php.net/" target="_top">PHP 7.4.33</a> and <a href="https://phpunit.de/">PHPUnit 9.6.4</a> at Mon Mar 6 20:27:43 UTC 2023.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="_js/jquery.min.js?v=9.2.25" type="text/javascript"></script>
+  <script src="_js/d3.min.js?v=9.2.25" type="text/javascript"></script>
+  <script src="_js/nv.d3.min.js?v=9.2.25" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([3,0,0,0,0,0,2,3,0,3,1,30], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([7,0,0,0,0,0,1,1,3,3,1,55], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[100,3,"<a href=\"Console\/Commands\/MailLatePayment.php.html#11\">App\\Console\\Commands\\MailLatePayment<\/a>"],[50,2,"<a href=\"Console\/Kernel.php.html#8\">App\\Console\\Kernel<\/a>"],[66.66666666666666,1,"<a href=\"Exceptions\/Handler.php.html#9\">App\\Exceptions\\Handler<\/a>"],[100,3,"<a href=\"Http\/Controllers\/Api\/LoginController.php.html#9\">App\\Http\\Controllers\\Api\\LoginController<\/a>"],[100,3,"<a href=\"Http\/Controllers\/Api\/LogoutController.php.html#9\">App\\Http\\Controllers\\Api\\LogoutController<\/a>"],[89.65517241379311,3,"<a href=\"Http\/Controllers\/Api\/RegisterController.php.html#11\">App\\Http\\Controllers\\Api\\RegisterController<\/a>"],[86.3013698630137,19,"<a href=\"Http\/Controllers\/Api\/WeeklyLoanController.php.html#20\">App\\Http\\Controllers\\Api\\WeeklyLoanController<\/a>"],[100,0,"<a href=\"Http\/Controllers\/Controller.php.html#10\">App\\Http\\Controllers\\Controller<\/a>"],[100,0,"<a href=\"Http\/Kernel.php.html#8\">App\\Http\\Kernel<\/a>"],[50,2,"<a href=\"Http\/Middleware\/Authenticate.php.html#7\">App\\Http\\Middleware\\Authenticate<\/a>"],[100,0,"<a href=\"Http\/Middleware\/EncryptCookies.php.html#7\">App\\Http\\Middleware\\EncryptCookies<\/a>"],[100,0,"<a href=\"Http\/Middleware\/PreventRequestsDuringMaintenance.php.html#7\">App\\Http\\Middleware\\PreventRequestsDuringMaintenance<\/a>"],[0,4,"<a href=\"Http\/Middleware\/RedirectIfAuthenticated.php.html#10\">App\\Http\\Middleware\\RedirectIfAuthenticated<\/a>"],[100,3,"<a href=\"Http\/Middleware\/Role.php.html#8\">App\\Http\\Middleware\\Role<\/a>"],[100,0,"<a href=\"Http\/Middleware\/TrimStrings.php.html#7\">App\\Http\\Middleware\\TrimStrings<\/a>"],[0,1,"<a href=\"Http\/Middleware\/TrustHosts.php.html#7\">App\\Http\\Middleware\\TrustHosts<\/a>"],[100,0,"<a href=\"Http\/Middleware\/TrustProxies.php.html#8\">App\\Http\\Middleware\\TrustProxies<\/a>"],[100,0,"<a href=\"Http\/Middleware\/VerifyCsrfToken.php.html#7\">App\\Http\\Middleware\\VerifyCsrfToken<\/a>"],[100,2,"<a href=\"Http\/Resources\/LoanResource.php.html#7\">App\\Http\\Resources\\LoanResource<\/a>"],[100,5,"<a href=\"Jobs\/GenerateRepaymentSchedules.php.html#21\">App\\Jobs\\GenerateRepaymentSchedules<\/a>"],[100,2,"<a href=\"Jobs\/MailLoanRequestCreated.php.html#15\">App\\Jobs\\MailLoanRequestCreated<\/a>"],[100,2,"<a href=\"Jobs\/MailRejectedLoanRequest.php.html#15\">App\\Jobs\\MailRejectedLoanRequest<\/a>"],[93.18181818181817,10,"<a href=\"Jobs\/ProcessPayment.php.html#19\">App\\Jobs\\ProcessPayment<\/a>"],[100,2,"<a href=\"Mail\/AllInstallmentSettledMail.php.html#10\">App\\Mail\\AllInstallmentSettledMail<\/a>"],[100,2,"<a href=\"Mail\/LoanApprovedMail.php.html#10\">App\\Mail\\LoanApprovedMail<\/a>"],[100,2,"<a href=\"Mail\/LoanRejectedMail.php.html#10\">App\\Mail\\LoanRejectedMail<\/a>"],[100,2,"<a href=\"Mail\/LoanRequestCreatedMail.php.html#10\">App\\Mail\\LoanRequestCreatedMail<\/a>"],[100,2,"<a href=\"Mail\/PaymentLateMail.php.html#10\">App\\Mail\\PaymentLateMail<\/a>"],[100,2,"<a href=\"Mail\/PaymentSuccessMail.php.html#10\">App\\Mail\\PaymentSuccessMail<\/a>"],[100,1,"<a href=\"Models\/Payment.php.html#9\">App\\Models\\Payment<\/a>"],[66.66666666666666,3,"<a href=\"Models\/RepaymentSchedule.php.html#8\">App\\Models\\RepaymentSchedule<\/a>"],[66.66666666666666,3,"<a href=\"Models\/User.php.html#12\">App\\Models\\User<\/a>"],[85.71428571428571,9,"<a href=\"Models\/WeeklyLoan.php.html#10\">App\\Models\\WeeklyLoan<\/a>"],[100,5,"<a href=\"Observers\/BlameableObserver.php.html#7\">App\\Observers\\BlameableObserver<\/a>"],[100,2,"<a href=\"Providers\/AppServiceProvider.php.html#10\">App\\Providers\\AppServiceProvider<\/a>"],[100,1,"<a href=\"Providers\/AuthServiceProvider.php.html#8\">App\\Providers\\AuthServiceProvider<\/a>"],[0,1,"<a href=\"Providers\/BroadcastServiceProvider.php.html#8\">App\\Providers\\BroadcastServiceProvider<\/a>"],[100,1,"<a href=\"Providers\/EventServiceProvider.php.html#10\">App\\Providers\\EventServiceProvider<\/a>"],[100,3,"<a href=\"Providers\/RouteServiceProvider.php.html#11\">App\\Providers\\RouteServiceProvider<\/a>"],[100,1,"<a href=\"Support\/Facade\/Hashid.php.html#7\">App\\Support\\Facade\\Hashid<\/a>"],[100,1,"<a href=\"Traits\/Blameable.php.html#7\">App\\Traits\\Blameable<\/a>"],[100,4,"<a href=\"Traits\/HasHashid.php.html#8\">App\\Traits\\HasHashid<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[100,1,"<a href=\"Console\/Commands\/MailLatePayment.php.html#32\">App\\Console\\Commands\\MailLatePayment::__construct<\/a>"],[100,2,"<a href=\"Console\/Commands\/MailLatePayment.php.html#42\">App\\Console\\Commands\\MailLatePayment::handle<\/a>"],[0,1,"<a href=\"Console\/Kernel.php.html#16\">App\\Console\\Kernel::schedule<\/a>"],[100,1,"<a href=\"Console\/Kernel.php.html#28\">App\\Console\\Kernel::commands<\/a>"],[66.66666666666666,1,"<a href=\"Exceptions\/Handler.php.html#36\">App\\Exceptions\\Handler::register<\/a>"],[100,3,"<a href=\"Http\/Controllers\/Api\/LoginController.php.html#17\">App\\Http\\Controllers\\Api\\LoginController::__invoke<\/a>"],[100,3,"<a href=\"Http\/Controllers\/Api\/LogoutController.php.html#17\">App\\Http\\Controllers\\Api\\LogoutController::__invoke<\/a>"],[89.65517241379311,3,"<a href=\"Http\/Controllers\/Api\/RegisterController.php.html#19\">App\\Http\\Controllers\\Api\\RegisterController::__invoke<\/a>"],[83.33333333333334,2,"<a href=\"Http\/Controllers\/Api\/WeeklyLoanController.php.html#27\">App\\Http\\Controllers\\Api\\WeeklyLoanController::index<\/a>"],[100,4,"<a href=\"Http\/Controllers\/Api\/WeeklyLoanController.php.html#44\">App\\Http\\Controllers\\Api\\WeeklyLoanController::show<\/a>"],[100,2,"<a href=\"Http\/Controllers\/Api\/WeeklyLoanController.php.html#67\">App\\Http\\Controllers\\Api\\WeeklyLoanController::store<\/a>"],[73.33333333333333,3,"<a href=\"Http\/Controllers\/Api\/WeeklyLoanController.php.html#97\">App\\Http\\Controllers\\Api\\WeeklyLoanController::approve<\/a>"],[73.33333333333333,3,"<a href=\"Http\/Controllers\/Api\/WeeklyLoanController.php.html#129\">App\\Http\\Controllers\\Api\\WeeklyLoanController::reject<\/a>"],[93.75,5,"<a href=\"Http\/Controllers\/Api\/WeeklyLoanController.php.html#161\">App\\Http\\Controllers\\Api\\WeeklyLoanController::payment<\/a>"],[50,2,"<a href=\"Http\/Middleware\/Authenticate.php.html#15\">App\\Http\\Middleware\\Authenticate::redirectTo<\/a>"],[0,4,"<a href=\"Http\/Middleware\/RedirectIfAuthenticated.php.html#20\">App\\Http\\Middleware\\RedirectIfAuthenticated::handle<\/a>"],[100,3,"<a href=\"Http\/Middleware\/Role.php.html#10\">App\\Http\\Middleware\\Role::handle<\/a>"],[0,1,"<a href=\"Http\/Middleware\/TrustHosts.php.html#14\">App\\Http\\Middleware\\TrustHosts::hosts<\/a>"],[100,1,"<a href=\"Http\/Resources\/LoanResource.php.html#12\">App\\Http\\Resources\\LoanResource::__construct<\/a>"],[100,1,"<a href=\"Http\/Resources\/LoanResource.php.html#25\">App\\Http\\Resources\\LoanResource::toArray<\/a>"],[100,1,"<a href=\"Jobs\/GenerateRepaymentSchedules.php.html#32\">App\\Jobs\\GenerateRepaymentSchedules::__construct<\/a>"],[100,3,"<a href=\"Jobs\/GenerateRepaymentSchedules.php.html#42\">App\\Jobs\\GenerateRepaymentSchedules::handle<\/a>"],[100,1,"<a href=\"Jobs\/GenerateRepaymentSchedules.php.html#75\">App\\Jobs\\GenerateRepaymentSchedules::round_up<\/a>"],[100,1,"<a href=\"Jobs\/MailLoanRequestCreated.php.html#26\">App\\Jobs\\MailLoanRequestCreated::__construct<\/a>"],[100,1,"<a href=\"Jobs\/MailLoanRequestCreated.php.html#36\">App\\Jobs\\MailLoanRequestCreated::handle<\/a>"],[100,1,"<a href=\"Jobs\/MailRejectedLoanRequest.php.html#26\">App\\Jobs\\MailRejectedLoanRequest::__construct<\/a>"],[100,1,"<a href=\"Jobs\/MailRejectedLoanRequest.php.html#36\">App\\Jobs\\MailRejectedLoanRequest::handle<\/a>"],[100,1,"<a href=\"Jobs\/ProcessPayment.php.html#33\">App\\Jobs\\ProcessPayment::__construct<\/a>"],[72.72727272727273,3,"<a href=\"Jobs\/ProcessPayment.php.html#44\">App\\Jobs\\ProcessPayment::handle<\/a>"],[100,2,"<a href=\"Jobs\/ProcessPayment.php.html#66\">App\\Jobs\\ProcessPayment::updateWeeklyLoan<\/a>"],[100,4,"<a href=\"Jobs\/ProcessPayment.php.html#78\">App\\Jobs\\ProcessPayment::updateRepaymentSchedule<\/a>"],[100,1,"<a href=\"Mail\/AllInstallmentSettledMail.php.html#21\">App\\Mail\\AllInstallmentSettledMail::__construct<\/a>"],[100,1,"<a href=\"Mail\/AllInstallmentSettledMail.php.html#31\">App\\Mail\\AllInstallmentSettledMail::build<\/a>"],[100,1,"<a href=\"Mail\/LoanApprovedMail.php.html#21\">App\\Mail\\LoanApprovedMail::__construct<\/a>"],[100,1,"<a href=\"Mail\/LoanApprovedMail.php.html#31\">App\\Mail\\LoanApprovedMail::build<\/a>"],[100,1,"<a href=\"Mail\/LoanRejectedMail.php.html#21\">App\\Mail\\LoanRejectedMail::__construct<\/a>"],[100,1,"<a href=\"Mail\/LoanRejectedMail.php.html#31\">App\\Mail\\LoanRejectedMail::build<\/a>"],[100,1,"<a href=\"Mail\/LoanRequestCreatedMail.php.html#21\">App\\Mail\\LoanRequestCreatedMail::__construct<\/a>"],[100,1,"<a href=\"Mail\/LoanRequestCreatedMail.php.html#31\">App\\Mail\\LoanRequestCreatedMail::build<\/a>"],[100,1,"<a href=\"Mail\/PaymentLateMail.php.html#21\">App\\Mail\\PaymentLateMail::__construct<\/a>"],[100,1,"<a href=\"Mail\/PaymentLateMail.php.html#31\">App\\Mail\\PaymentLateMail::build<\/a>"],[100,1,"<a href=\"Mail\/PaymentSuccessMail.php.html#21\">App\\Mail\\PaymentSuccessMail::__construct<\/a>"],[100,1,"<a href=\"Mail\/PaymentSuccessMail.php.html#31\">App\\Mail\\PaymentSuccessMail::build<\/a>"],[100,1,"<a href=\"Models\/Payment.php.html#33\">App\\Models\\Payment::weeklyLoan<\/a>"],[100,1,"<a href=\"Models\/RepaymentSchedule.php.html#34\">App\\Models\\RepaymentSchedule::getStatusAttribute<\/a>"],[0,1,"<a href=\"Models\/RepaymentSchedule.php.html#39\">App\\Models\\RepaymentSchedule::getStatusText<\/a>"],[100,1,"<a href=\"Models\/RepaymentSchedule.php.html#44\">App\\Models\\RepaymentSchedule::weeklyLoan<\/a>"],[100,1,"<a href=\"Models\/User.php.html#51\">App\\Models\\User::getJWTIdentifier<\/a>"],[100,1,"<a href=\"Models\/User.php.html#61\">App\\Models\\User::getJWTCustomClaims<\/a>"],[0,1,"<a href=\"Models\/User.php.html#66\">App\\Models\\User::weeklyLoans<\/a>"],[100,1,"<a href=\"Models\/WeeklyLoan.php.html#45\">App\\Models\\WeeklyLoan::user<\/a>"],[0,1,"<a href=\"Models\/WeeklyLoan.php.html#50\">App\\Models\\WeeklyLoan::payment<\/a>"],[100,1,"<a href=\"Models\/WeeklyLoan.php.html#55\">App\\Models\\WeeklyLoan::RepaymentSchedules<\/a>"],[100,1,"<a href=\"Models\/WeeklyLoan.php.html#60\">App\\Models\\WeeklyLoan::getRepaymentScheduleAttribute<\/a>"],[100,1,"<a href=\"Models\/WeeklyLoan.php.html#65\">App\\Models\\WeeklyLoan::getStatusAttribute<\/a>"],[100,1,"<a href=\"Models\/WeeklyLoan.php.html#70\">App\\Models\\WeeklyLoan::getStatusText<\/a>"],[87.5,3,"<a href=\"Models\/WeeklyLoan.php.html#75\">App\\Models\\WeeklyLoan::changeStatus<\/a>"],[100,3,"<a href=\"Observers\/BlameableObserver.php.html#15\">App\\Observers\\BlameableObserver::creating<\/a>"],[100,2,"<a href=\"Observers\/BlameableObserver.php.html#32\">App\\Observers\\BlameableObserver::updating<\/a>"],[100,1,"<a href=\"Providers\/AppServiceProvider.php.html#17\">App\\Providers\\AppServiceProvider::register<\/a>"],[100,1,"<a href=\"Providers\/AppServiceProvider.php.html#30\">App\\Providers\\AppServiceProvider::boot<\/a>"],[100,1,"<a href=\"Providers\/AuthServiceProvider.php.html#24\">App\\Providers\\AuthServiceProvider::boot<\/a>"],[0,1,"<a href=\"Providers\/BroadcastServiceProvider.php.html#15\">App\\Providers\\BroadcastServiceProvider::boot<\/a>"],[100,1,"<a href=\"Providers\/EventServiceProvider.php.html#28\">App\\Providers\\EventServiceProvider::boot<\/a>"],[100,1,"<a href=\"Providers\/RouteServiceProvider.php.html#36\">App\\Providers\\RouteServiceProvider::boot<\/a>"],[100,2,"<a href=\"Providers\/RouteServiceProvider.php.html#57\">App\\Providers\\RouteServiceProvider::configureRateLimiting<\/a>"],[100,1,"<a href=\"Support\/Facade\/Hashid.php.html#9\">App\\Support\\Facade\\Hashid::getFacadeAccessor<\/a>"],[100,1,"<a href=\"Traits\/Blameable.php.html#9\">App\\Traits\\Blameable::bootBlameable<\/a>"],[100,2,"<a href=\"Traits\/HasHashid.php.html#10\">App\\Traits\\HasHashid::findOrFailByHashid<\/a>"],[100,1,"<a href=\"Traits\/HasHashid.php.html#22\">App\\Traits\\HasHashid::getHashidAttribute<\/a>"],[100,1,"<a href=\"Traits\/HasHashid.php.html#27\">App\\Traits\\HasHashid::getHashidWithoutPrefixAttribute<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>
